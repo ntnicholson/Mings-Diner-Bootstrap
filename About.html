@@ -2,6 +2,11 @@
 <html lang="en">
 
 <head>
+  <style>
+    #MingTitle {
+      color: lightcoral;
+    }
+  </style>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
@@ -14,10 +19,10 @@
 
 <body>
   <div class="container">
-    <h4>Ming's Diner</h4>
+    <h4 id="MingTitle">Ming's Diner</h4>
   </div>
   <!-- NAVBAR WITH RESPONSIVE TOGGLE -->
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-3">
+  <nav class="navbar navbar-expand-sm navbar-dark bg-danger mb-3">
     <div class="container">
       <a class="navbar-brand" href="#" disabled>Logo</a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
@@ -49,7 +54,11 @@
       </div>
     </div>
   </div>
-
+  <!-- FIXED BOTTOM -->
+  <br />
+  <nav class="navbar navbar-bottom navbar-dark bg-dark justify-content-center">
+    <a href="#" class="navbar-brand">Ming's Diner</a>
+  </nav>
 
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

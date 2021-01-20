@@ -2,6 +2,11 @@
 <html lang="en">
 
 <head>
+  <style>
+    #MingTitle {
+      color: lightcoral;
+    }
+  </style>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
@@ -14,10 +19,10 @@
 
 <body>
   <div class="container">
-    <h4>Ming's Diner</h4>
+    <h4 id="MingTitle">Ming's Diner</h4>
   </div>
   <!-- NAVBAR WITH RESPONSIVE TOGGLE -->
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-3">
+  <nav class="navbar navbar-expand-sm navbar-dark bg-danger mb-3">
     <div class="container">
       <a class="navbar-brand" href="#" disabled>Logo</a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
@@ -54,7 +59,7 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img class="d-block img-fluid" src="https://source.unsplash.com/wgq4eit198Q/700x400" alt="First Slide">
+              <img class="d-block img-fluid" src="" alt="First Slide">
               <div class="carousel-caption d-none d-md-block">
                 <h3>Slide One</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, illo?</p>
@@ -88,6 +93,11 @@
       </div>
     </div>
   </div>
+  <!-- FIXED BOTTOM -->
+  <br />
+  <nav class="navbar fixed-bottom navbar-dark bg-dark justify-content-center">
+    <a href="#" class="navbar-brand">Ming's Diner</a>
+  </nav>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">

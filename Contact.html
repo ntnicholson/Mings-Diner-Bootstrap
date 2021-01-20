@@ -2,6 +2,11 @@
 <html lang="en">
 
 <head>
+  <style>
+    #MingTitle {
+      color: lightcoral;
+    }
+  </style>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
@@ -14,10 +19,10 @@
 
 <body>
   <div class="container">
-    <h4>Ming's Diner</h4>
+    <h4 id="MingTitle">Ming's Diner</h4>
   </div>
   <!-- NAVBAR WITH RESPONSIVE TOGGLE -->
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-3">
+  <nav class="navbar navbar-expand-sm navbar-dark bg-danger mb-3">
     <div class="container">
       <a class="navbar-brand" href="#" disabled>Logo</a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
@@ -46,15 +51,73 @@
       <div class="col-sm-8 m-auto">
         <!--m-auto = margins auto -->
         <!-- BLOCK -->
-        <div class="card bg-success text-white mb-3">
+        <div class="card bg-dark text-white text-center mb-3">
           <div class="card-body">
             <em>Complete the form and we will reach out to you!</em>
           </div>
         </div>
 
+        <br>
+        <br>
+      </div>
+    </div>
+    <div class="col-md-10 m-auto">
+      <!-- CARD WITH HEADER -->
+      <div class="card">
+        <div class="card-header text-white bg-warning">
+          Contact Us
+        </div>
+        <div class="card-body">
+          <!-- BASIC INPUT GROUPS -->
+          <form>
+            <div class="form-group">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Name</span>
+                </div>
+                <input class="form-control" type="text" placeholder="First and Last Name">
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">E-mail</span>
+                </div>
+                <input class="form-control" type="text" placeholder="E-mail address">
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Phone</span>
+                </div>
+                <input class="form-control" type="text" placeholder="(Area-Code) Phone number">
+              </div>
+              <div class="input-group mb-auto">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Message</span>
+                </div>
+                <textarea class="form-control" name="message" id="message" rows="3"></textarea>
+                </br>
+              </div>
+            </div>
+        </div>
+        <div class="container">
+          <div class="mb-auto">
+            <button type=submit class="btn btn-dark">Submit</button>
+            <button type=reset class="btn btn-danger">Cancel</button>
+          </div>
+        </div>
+        </br>
+        </form>
       </div>
     </div>
   </div>
+  </div>
+
+  <!-- FIXED BOTTOM -->
+  <br />
+  <nav class="navbar navbar-bottom navbar-dark bg-dark justify-content-center">
+    <a href="#" class="navbar-brand">Ming's Diner</a>
+  </nav>
+
+
 
 
 
