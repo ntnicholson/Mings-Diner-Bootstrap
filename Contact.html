@@ -67,33 +67,33 @@
         <div class="card-header text-white bg-warning">
           Contact Us
         </div>
-        <div class="card-body">
+        <div class="card-body" id="contactForm">
           <!-- BASIC INPUT GROUPS -->
-          <form>
-            <div class="form-group">
+          <form class="form-group" onsubmit="return (validateContact())" id="contactForm">
+            <div>
               <div class="input-group mb-3">
                 <div class="input-group-prepend">
                   <span class="input-group-text">Name</span>
                 </div>
-                <input class="form-control" type="text" placeholder="First and Last Name">
+                <input class="form-control" type="text" id="name" name="name" required />
               </div>
               <div class="input-group mb-3">
                 <div class="input-group-prepend">
                   <span class="input-group-text">E-mail</span>
                 </div>
-                <input class="form-control" type="text" placeholder="E-mail address">
+                <input class="form-control" type="text" id="email" required>
               </div>
               <div class="input-group mb-3">
                 <div class="input-group-prepend">
                   <span class="input-group-text">Phone</span>
                 </div>
-                <input class="form-control" type="text" placeholder="(Area-Code) Phone number">
+                <input class="form-control" type="number" id="phone">
               </div>
               <div class="input-group mb-auto">
                 <div class="input-group-prepend">
                   <span class="input-group-text">Message</span>
                 </div>
-                <textarea class="form-control" name="message" id="message" rows="3">Leave a message</textarea>
+                <textarea class="form-control" name="message" id="message" rows="3"></textarea>
                 </br>
               </div>
             </div>
@@ -114,12 +114,15 @@
   <!-- FIXED BOTTOM -->
   <br />
   <nav class="navbar navbar-bottom navbar-dark bg-dark justify-content-center">
-    <a href="#" class="navbar-brand">Ming's Diner</a>
+    <!-- <img src=images\5-diner-1-logo-black-and-white.png> -->
+    <a href="#" class="navbar-brand">Ming's Diner</a><br />
+    <footer class="text-white">
+      41 Miller Ave.South Ozone Park, NY 11420<br />
+      (555) 555.5555
+    </footer>
   </nav>
-
-
-
-
+  <script src="js/validation.js">
+  </script>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
